@@ -1,0 +1,39 @@
+{
+  "name": "StpMessage",
+  "fields": [
+    {
+      "fieldName": "key",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descEn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "messageAr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "messageEn",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "stp_message",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "ruleEngineMs",
+  "clientRootFolder": "ruleEngineMs",
+  "databaseType": "sql",
+  "changelogDate": "20210329112145"
+}

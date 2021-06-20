@@ -1,0 +1,46 @@
+{
+  "name": "DroolsFiles",
+  "fields": [
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileContent",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "fileValidationType",
+      "fieldType": "FileValidationType",
+      "fieldValues": "DTO_VALIDATION,BUSINESS_VALIDATION",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "simpleClassName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullClassName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "drools_files",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "ruleEngineMs",
+  "clientRootFolder": "ruleEngineMs",
+  "databaseType": "sql",
+  "changelogDate": "20210329081602"
+}

@@ -1,0 +1,39 @@
+
+enum FileValidationType {
+    DTO_VALIDATION, BUSINESS_VALIDATION
+}
+
+entity DroolsFiles {
+  fileName String
+  fileType String
+  fileContent AnyBlob
+  fileContentContentType String
+  fileValidationType FileValidationType required
+  simpleClassName String
+  fullClassName String
+}
+
+entity ExceptionLogs {
+  exceptionMessage TextBlob
+}
+
+entity OperationsLogs {
+  operationName String
+  logDetails String
+}
+
+entity StpMessage {
+  key String
+  descAr String
+  descEn String
+  messageAr String
+  messageEn String
+
+}
+
+paginate all with pagination
+dto * with mapstruct
+
+service all with serviceImpl
+
+
